@@ -1,0 +1,65 @@
+body {
+    font-family: " font-family: "Oswald", sans-serif;";
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: pink;
+    height: 120px;
+}
+
+.nav {
+    background: pink;
+    height: 80px;
+}
+
+.footer {
+    background: pink;
+    height: 80px;
+}
+
+.main {
+    background: palevioletred;
+    height: 300px;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aside1 {
+    background: pink;
+}
+
+/* tampilan responsive */
+@media all and (min-width: 800px) {
+    .main {
+        flex: 2;
+    }
+    .aside1 {
+        order: 2;
+    }
+    .main {
+        order: 1;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside1 {
+        flex: 1;
+    }
+}
